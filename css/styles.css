@@ -9,19 +9,17 @@ h1, p {
 
 /* || Typography */
 
-.title {
+h1 {
     font-family: 'Lora', serif;
     font-weight: 400;
     font-size: 2rem;
     color: #143774;
-    text-align: center;
     margin: 0;
 }
 
 .subtitle,
 nav {
     font-weight: 700;
-    text-align: center;
     text-transform: uppercase;
 }
 
@@ -35,6 +33,26 @@ nav {
     margin: 0;
 }
 
+
+
+/* || Layout */
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 2em 0;
+}
+
 .nav-list {
     list-style: none;
     padding-left: 0;
@@ -43,7 +61,7 @@ nav {
 }
 
 .nav-list-item {
-    margin: 0 1em;
+    margin-left: 2em;
 }
 
 
@@ -51,19 +69,37 @@ nav {
     text-decoration: none;
     color: #707070;
     font-weight: 700;
+    padding: .25em 0;
 }
 
 .nav-link:hover, .nav-link:focus {
     color: #1792D2;
-    border-bottom: 3px solid #1792D2;
-    padding-bottom: .3em;
 }
 
+.current-page {
+    border-bottom: 3px solid #707070;
+}
 
+.current-page:hover, .current-page:focus {
+    color: #707070;
+}
 
-/* || Layout */
+@media (max-width: 730px) {
+    .container-nav {
+        flex-direction: column;
+    }
 
-header {
-    background-color: #f8f8f8;
-    padding: 2em 0;
+    .site-title {
+        text-align: center;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list-item {
+        margin: .5em 0;
+    }
+    
 }
