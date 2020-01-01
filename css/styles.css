@@ -7,6 +7,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
   color: #707070;
+  line-height: 1.6;
 }
 
 h1, 
@@ -79,12 +80,15 @@ nav {
   font-size: .75rem;
   color: #1792d2;
   margin: 0;
+  text-align: left;
+  letter-spacing: 2px;
 }
 
 .nav-link {
   text-decoration: none;
   color: #707070;
   padding: .25em 0;
+  letter-spacing: 1px;
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -123,6 +127,7 @@ nav {
   text-transform: uppercase;
   text-decoration: none;
   margin-bottom: 1rem;
+  letter-spacing: 2px;
 }
 
 .article-read-more:hover, .article-read-more:focus {
@@ -133,6 +138,7 @@ nav {
 .widget-title {
   text-align: left;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .widget-body {
@@ -156,6 +162,7 @@ nav {
   text-align: left;
   margin-top: .5em;
   color: #143774;
+  line-height: 1.4;
 }
 
 .about-me-subheader {
@@ -176,7 +183,7 @@ header {
 
 footer {
   background-color: #143774;
-  color: #ffffff;
+  color: rgba(255, 255, 255, .65);
   text-align: center;
   padding: 3em 0;
 }
