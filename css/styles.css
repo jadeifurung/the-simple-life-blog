@@ -1,12 +1,18 @@
+/* 
+  font-family: 'Proza Libre', sans-serif;
+
+    font-family: 'Open Sans', sans-serif; 
+*/
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Open Sans', sans-serif; 
   font-weight: 300;
-  color: #707070;
+  color: #565c5e;
   line-height: 1.6;
 }
 
@@ -40,8 +46,8 @@ img {
 h1,
 h2,
 h3 {
-  font-family: 'Lora', serif;
-  color: #143774;
+  font-family: 'Proza Libre', sans-serif;
+  color: #222c3c;
 }
 
 h1 {
@@ -51,15 +57,7 @@ h1 {
 }
 
 h3 {
-  color: #1792d2;
-}
-
-a {
-  color: #1792d2;
-}
-
-a:hover, a:focus {
-  color: #143774;
+  color: #222c3c;
 }
 
 strong,
@@ -78,7 +76,7 @@ nav {
 
 .subtitle {
   font-size: .75rem;
-  color: #1792d2;
+  color: #93634a;
   margin: 0;
   text-align: center;
   letter-spacing: 2px;
@@ -86,13 +84,14 @@ nav {
 
 .nav-link {
   text-decoration: none;
-  color: #707070;
+  color: #565c5e;
   padding: .25em 0;
-  letter-spacing: 1px;
+  letter-spacing: .8px;
+  transition: color 500ms;
 }
 
 .nav-link:hover, .nav-link:focus {
-  color: #1792d2;
+  color: #93634a ;
 }
 
 .article-title {
@@ -128,12 +127,18 @@ nav {
   text-decoration: none;
   margin-bottom: 1rem;
   letter-spacing: 2px;
+  color: #222c3c;
+  transition: color 500ms;
 }
 
 .article-read-more:hover, .article-read-more:focus {
-  color: #143774;
-  text-decoration: underline;
+  color: #93634a;
 }
+
+.article-read-more:active {
+  color: pink;
+}
+
 
 .widget-title {
   text-align: left;
@@ -149,7 +154,7 @@ nav {
 .widget-recent-post {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #707070;
+  border-bottom: 1px solid #565c5e;
   margin-bottom: 1em;
 }
 
@@ -161,13 +166,22 @@ nav {
 .widget-recent-post-title {
   text-align: left;
   margin-top: .5em;
-  color: #143774;
+  color: #222c3c;
   line-height: 1.4;
 }
 
+.about-me-header,
 .about-me-subheader {
-  font-size: 1.3125rem;
-  color: #1792d2;
+  margin-bottom: .3em;
+}
+
+.about-me-header {
+  font-size: 1.4rem;
+}
+
+.about-me-subheader {
+  font-size: 1.2rem;
+  color: #93634a;
 }
 
 
@@ -175,14 +189,13 @@ nav {
 /* || Layout */
 
 header {
-  background-color: #f8f8f8;
   padding: 2em 0;
   text-align: center;
   margin-bottom: 2em;
 }
 
 footer {
-  background-color: #143774;
+  background-color: #222c3c;
   color: rgba(255, 255, 255, .65);
   text-align: center;
   padding: 3em 0;
@@ -201,14 +214,15 @@ footer {
 }
 
 .current-page {
-  border-bottom: 3px solid #707070;
-}
-
-.current-page:hover, .current-page:focus {
-  color: #707070;
+  border-bottom: 3px solid #93634a;
+  color: #93634a ;
 }
 
 @media (min-width: 750px) {
+  .site-title {
+    text-align: left;
+  }
+
   main {
       width: 70%;
   }
@@ -253,7 +267,7 @@ footer {
 .article-featured {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #707070;
+  border-bottom: 1px solid #565c5e;
   padding-bottom: 2em;
   margin-bottom: 2em;
 }
@@ -263,7 +277,7 @@ footer {
 }
 
 .article-info {
-  color: #707070;
+  color: #565c5e;
   order: -1;
 }
 
@@ -305,7 +319,7 @@ footer {
 .sidebar-widget {
   width: 100%;
   text-align: center;
-  border: 20px solid #ebebeb;
+  border: 20px solid #fbe4d6;
   margin-bottom: 1.5em;
   padding: 1.5em;
 }
